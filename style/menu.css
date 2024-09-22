@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Source Code Pro";
+    src: url("./fonts/SourceCodePro-Regular.ttf") format("truetype");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Source Code Pro";
+    src: url("./fonts/SourceCodePro-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+
+  html {
+    width: 360px;
+  }
+  body {
+    width: 360px;
+    overflow-y: scroll;
+  }
+}

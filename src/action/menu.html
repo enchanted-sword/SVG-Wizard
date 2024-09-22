@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configure SVG Wizard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=360, initial-scale=1" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="text-blue-100 bg-slate-800 selection:bg-blue-100 selection:text-blue-700 m-0 p-0"
+  >
+    <main class="flex flex-col gap-4 p-4">
+      <header>
+        <h1 class="text-2xl font-bold">Options</h1>
+        <hr class="border-blue-100 border-2 rounded-full mt-1" />
+      </header>
+      <section
+        class="rounded-lg ring-inset ring-2 ring-white/20 p-3 flex flex-col gap-3"
+      >
+        <header>
+          <h2 class="text-xl font-bold">Image format</h2>
+          <hr class="border-blue-100 border-2 rounded-full mt-1" />
+        </header>
+        <label for="format">
+          Controls which format SVG imagess will be saved and copied in. PNG
+          images have a slightly larger filesize, but support transparency,
+          whereas JPEG images will always have a solid-color background.
+        </label>
+        <select
+          name="format"
+          id="format"
+          class="bg-slate-400 text-slate-800 border-blue-100 border-2 p-2 font-bold rounded-lg focus:bg-blue-100 focus:outline-none focus:border-blue-700"
+        >
+          <option value="png">PNG</option>
+          <option value="jpeg">JPEG</option>
+        </select>
+      </section>
+      <section
+        class="rounded-lg ring-inset ring-2 ring-white/20 p-3 flex flex-col gap-3"
+      >
+        <header>
+          <h2 class="text-xl font-bold">Image scaling</h2>
+          <hr class="border-blue-100 border-2 rounded-full mt-1" />
+        </header>
+        <label for="scale">
+          Controls the scaling factor used to convert SVGs. A larger scaling
+          factor will result in a higher-resolution image with a larger
+          filesize.
+        </label>
+        <input
+          class="bg-slate-400 text-slate-800 border-blue-100 border-2 p-2 font-bold rounded-lg focus-visible:bg-blue-100 focus-visible:outline-none focus-visible:border-blue-700 focus-visible:selection:bg-blue-700 focus-visible:selection:text-blue-100"
+          id="scale"
+          name="scale"
+          type="number"
+          min="1"
+          max="100"
+          step="1"
+          value="4"
+          placeholder="Scaling factor between 1 and 100"
+        />
+        <hr class="border-blue-100 border-1 rounded-full" />
+        <p>
+          Typically, SVG images in webpages are quite small, but thanks to the
+          properties of vector graphics, they can be scaled to any size without
+          becoming pixelated or blurry. However, other image formats, such as
+          PNG and JPEG, do not use vector graphics, and thus will lose detail as
+          they are scaled up or down in size. A scaling factor is necessary to
+          ensure that even SVG icons as small as 16px by 16px will still produce
+          a PNG or JPEG image that is not blurry or overly pixelated.
+        </p>
+      </section>
+      <section
+        class="flex flex-row gap-3 justify-center flex-wrap rounded-lg ring-inset ring-2 ring-white/20 p-3"
+      >
+        <a
+          href="https://floofy.tech/@starlight"
+          class="text-sm flex flex-row gap-2 items-center hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+          </svg>
+          Authors
+        </a>
+        <a
+          href="https://github.com/enchanted-sword/SVG-Wizard"
+          class="text-sm flex flex-row gap-2 items-center hover:underline"
+          rel="noreferrer"
+          target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+          View source code
+        </a>
+        <a
+          href="https://github.com/enchanted-sword/SVG-Wizard/issues"
+          class="text-sm flex flex-row gap-2 items-center hover:underline"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+            />
+          </svg>
+          Report a bug
+        </a>
+      </section>
+      <footer id="footer" class="w-full text-center text-xl"></footer>
+      <script src="menu.js"></script>
+    </main>
+  </body>
+</html>

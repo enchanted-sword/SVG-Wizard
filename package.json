@@ -1,0 +1,33 @@
+{
+  "name": "svgwizard",
+  "version": "1.0",
+  "main": "src/background.js",
+  "scripts": {
+    "test": "web-ext lint",
+    "posttest": "eslint ./",
+    "prebuild": "npm run build-css",
+    "build": "web-ext build",
+    "build-css": "npx tailwindcss -i style/menu.css -o src/action/output.css --minify",
+    "start:dev": "web-ext run --firefox=deved -t=firefox-desktop",
+    "start:adb": "web-ext run -t=firefox-android --adb-device=[] --firefox-apk=org.mozilla.fenix"
+  },
+  "author": "Starlight System",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "web-ext": "^8.3.0"
+  },
+  "webExt": {
+    "sourceDir": "src/",
+    "build": {
+      "overwriteDest": true
+    },
+    "run": {
+      "firefox": "deved"
+    }
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}
