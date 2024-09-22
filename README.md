@@ -1,2 +1,2 @@
 # SVG-Wizard
-A lightweight Firefox extension that enables left-click saving SVGs and copying them to the clipboard.
+A lightweight Firefox extension that enables right-click saving SVGs and copying them to the clipboard.
