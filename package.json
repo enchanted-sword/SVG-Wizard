@@ -1,6 +1,6 @@
 {
   "name": "svgwizard",
-  "version": "1.0",
+  "version": "1.1.0",
   "main": "src/background.js",
   "scripts": {
     "test": "web-ext lint",
