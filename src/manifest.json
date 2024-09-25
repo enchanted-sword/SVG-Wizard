@@ -40,7 +40,6 @@
       "strict_min_version": "63.0"
     },
     "gecko_android": {
-      "id": "svgWizard@starlight",
       "strict_min_version": "113.0"
     }
   }
